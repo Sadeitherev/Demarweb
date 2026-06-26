@@ -1,0 +1,14 @@
+{
+  "files.watcherExclude": {
+    "**/.next/**": true,
+    "**/node_modules/**": true,
+    "**/.turbo/**": true,
+    "**/dist/**": true
+  },
+  "search.exclude": {
+    "**/.next/**": true,
+    "**/node_modules/**": true,
+    "**/.turbo/**": true,
+    "**/dist/**": true
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "nextlevelbuilder",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "exports": {
+    "./ui-ux-pro-max-skill": "./src/ui-ux-pro-max-skill.tsx"
+  },
+  "dependencies": {
+    "react": "^19.1.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.8",
+    "typescript": "^5.8.3"
+  }
+}

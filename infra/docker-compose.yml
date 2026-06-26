@@ -1,0 +1,24 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: demar-alyans-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: demar_alyans
+      POSTGRES_USER: demar_app
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    ports:
+      - "5432:5432"
+    volumes:
+      - demar_alyans_pgdata:/var/lib/postgresql/data
+    command:
+      - postgres
+      - -c
+      - shared_preload_libraries=pg_stat_statements
+      - -c
+      - log_min_duration_statement=500
+      - -c
+      - password_encryption=scram-sha-256
+
+volumes:
+  demar_alyans_pgdata:
